@@ -1,6 +1,6 @@
 {
   "name": "react-component",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "A react component which lets you display content on a tile.",
   "main": "index.jsx",
   "config": {
@@ -20,7 +20,7 @@
     "open": "opener http://$npm_package_config_host:$npm_package_config_port/index.html",
     "serve": "npm run build && parallelshell 'npm run watch -s' 'npm run watchify -s' 'npm run livereload -s' 'npm run open -s'"
   },
-  "author": "",
+  "author": "David Pfahler <david@excellenteasy.com>",
   "license": "MIT",
   "devDependencies": {
     "babel": "^4.3.0",
@@ -42,5 +42,23 @@
   },
   "dependencies": {
     "react": "^0.12.2"
-  }
+  },
+  "engines": {
+    "iojs": "^1",
+    "node": "^0.10",
+    "npm": "^2"
+  },
+  "homepage": "https://github.com/excellenteasy/react-component.git",
+  "keywords": [
+    "react",
+    "component",
+    "reuseable",
+    "es6",
+    "jsx",
+    "browserify",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/excellenteasy/react-component.git"
+  },
 }

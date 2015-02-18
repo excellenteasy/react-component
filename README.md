@@ -33,6 +33,15 @@ You might also want to remove this README and write your own.
 You will most likely only need these one task:
 `npm run serve`: sets up watchify and a livereload server; opens in your favorite browser
 
+If you develop multiple components and run into EADDRINUSE issue, you can change the port for the livereload server with these two commands:
+
+```bash
+npm config set component:lrport 35730
+npm config set component:port 8081
+```
+
+These settings will persist in the repo, so you can change ports this way to avoid reusing the same port.
+
 ## How does this work under the hood?
 ### Important files
 * `index.jsx`: This **is** your component, exported as an ES6 module. You can use ES6 and JSX syntax.
