@@ -9,15 +9,14 @@
     "host": "0.0.0.0"
   },
   "scripts": {
-    "postinstall": "npm run clean",
     "ify": "browserify -t babelify index.jsx",
-    "clean": "rm -rf example && mkdir example",
+    "clean": "rm -rf example/build.js",
     "prebuild": "npm run clean",
     "build": "npm run ify -s > example/build.js",
     "test": "babel-node test | tap-spec",
     "watch": "onchange 'index.jsx' -- npm test",
     "watchify": "watchify -t babelify index.jsx -o example/build.js",
-    "livereload": "lrhs -d example -b -w example/index.html,example/index.js -l $npm_package_config_lrport",
+    "livereload": "lrhs -b -w index.html,build.js -l $npm_package_config_lrport",
     "open": "opener http://$npm_package_config_host:$npm_package_config_port/index.html",
     "serve": "npm run build && parallelshell 'npm run watch -s' 'npm run watchify -s' 'npm run livereload -s' 'npm run open -s'"
   },
