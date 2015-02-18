@@ -3,7 +3,7 @@ const React = require('react')
 
 const spec = {
   render() {
-    console.log('foo')
+    console.log('inside render')
     return (
       <div>bar</div>
     )
