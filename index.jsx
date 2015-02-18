@@ -1,11 +1,13 @@
 'use strict'
 const React = require('react')
 
-module.exports = React.createClass({
+const spec = {
   render() {
-    console.log('dasdf')
+    console.log('foo')
     return (
-      <div>foo</div>
+      <div>bar</div>
     )
   }
-})
+}
+
+export const Component = React.createClass(spec)
