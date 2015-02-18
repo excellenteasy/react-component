@@ -1,7 +1,7 @@
 {
   "name": "react-component",
   "version": "0.0.0-semantically-released",
-  "description": "A react component which lets you display content on a tile.",
+  "description": "A simple development process for reuseable react components written in ES6.",
   "main": "index.jsx",
   "config": {
     "lrport": 35729,
@@ -55,8 +55,8 @@
     "reuseable",
     "es6",
     "jsx",
-    "browserify",
-  ,
+    "browserify"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/excellenteasy/react-component.git"
