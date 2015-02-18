@@ -14,6 +14,7 @@ This repository gives you a starting point if you want to:
 * write tests with [`tape`](https://github.com/substack/tape)
 * maintain no separate css file, but use [inline styles](http://facebook.github.io/react/tips/inline-styles.html) with react
 * use simple npm scripts as a build process
+* adhere to [AngularJS Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) (no pun intended)
 * be able to understand the system and code in this boilerplate in 5 minutes
 
 ## Get started
