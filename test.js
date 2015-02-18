@@ -1,8 +1,8 @@
 'use strict'
-var test = require('tape')
-var component = require('./')
+const test = require('tape')
+import {Component} from './'
 
 test('component class', function (t) {
   t.plan(1)
-  t.ok(component, 'useless test assertion, but hey, at least tests work ;)')
+  t.ok(Component, 'useless test assertion, but hey, at least tests work ;)')
 })

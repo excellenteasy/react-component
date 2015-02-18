@@ -1,13 +1,13 @@
 # react-component
-> A development process for reuseable react components you can fully comprehend in 5 minutes.
+> A simple development process for reuseable react components written in ES6.
 
 ## Assumptions
 This repository gives you a starting point if you want to:
 * develop reusable components independently
-* use `browserify` instead of webpack
+* use `browserify`
 * write in ES6 using `babelify`
 * use JSX
-* write tests with [`tape`]()
+* write tests with [`tape`](https://github.com/substack/tape)
 * maintain no separate css file, but use [inline styles](http://facebook.github.io/react/tips/inline-styles.html) with react
 * use simple npm scripts to build, not Grunt or Gulp
 * be able to understand the system and code in this boilerplate in 5 minutes
@@ -26,9 +26,8 @@ npm install
 You might also want to remove this README and write your own.
 
 ## Build process
-You will most likely only need these:
-* `npm run serve`: sets up watchify and a livereload server; opens in your favorite browser
-* `npm run dist`: creates a minified build of your component in `dist/index.min.js`
+You will most likely only need these one task:
+`npm run serve`: sets up watchify and a livereload server; opens in your favorite browser
 
 ## 5-minute comprehension
 So how does this build process work? Let's look at what the different files are for:
