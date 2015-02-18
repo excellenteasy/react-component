@@ -3,22 +3,30 @@
 [![Dependency Status](https://david-dm.org/excellenteasy/react-component.svg)](https://david-dm.org/excellenteasy/react-component)
 [![devDependency Status](https://david-dm.org/excellenteasy/react-component/dev-status.svg)](https://david-dm.org/excellenteasy/react-component#info=devDependencies)
 
-> A simple development process for reuseable react components written in ES6.
+## Disclaimer
+This is **not** battle tested (yet). I think, this is good approach and put a lot of work into it, but it might not withstand the test of time. With that in mind, please continue reading and give feedback :)
+
+## What is this thing and why should I use it?
+`react-component` is a **boilerplate** for creating reuseable react components. It is for you if you want to adhere to best practices that prevent you from shooting yourself in the foot. Here is how:
+
+The goal is to create something that is robust and easy to reason about. Just like React components help you to understand how your app works, the approach taken here should help you understand how you build process and release workflow works. This is reflected in the choice of technology used (see devDependencies) as well as the conceptual simplifications.
+
+You should use this to create one component at a time. This is **not** the build process for your entire app, development and production server, analytics and HR management tool. This is for building test-driven, semantically release, independnet components.
 
 ## Assumptions
 This repository gives you a starting point if you want to:
 * develop reusable components independently
-* use `browserify`
-* write in ES6 using `babelify`
-* use JSX
-* write tests with [`tape`](https://github.com/substack/tape)
-* maintain no separate css file, but use [inline styles](http://facebook.github.io/react/tips/inline-styles.html) with react
-* use simple npm scripts as a build process
+* use `browserify` for everything
+* write code in ES6 (using `babelify`)
+* write tests (first) with [`tape`](https://github.com/substack/tape)
+* maintain no separate css file, but use [inline styles](http://facebook.github.io/react/tips/inline-styles.html)
+* use simple npm scripts as a build process instead of Grunt or Gulp
 * adhere to [AngularJS Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) (no pun intended)
-* be able to understand the system and code in this boilerplate in 5 minutes
+* release components on every push with [semantic-release](https://github.com/boennemann/semantic-release)
+* be able to understand the system and code in this boilerplate in < 5 minutes
 
 ## Get started
-Clone this repo, change the git origin to your repository, change package name (and version) in `package.json` and install:
+Clone this repo, change the git origin to your repository, change package name (and version) in `package.json` and npm install:
 
 ```bash
 git clone https://github.com/excellenteasy/react-component.git
@@ -27,6 +35,8 @@ git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git
 vim package.json
 npm install
 ```
+
+Next, [setup semantic-release](https://github.com/boennemann/semantic-release#package). If you are not familiar with it, please read the wonderful explanation in its [README](https://github.com/boennemann/semantic-release/blob/master/README.md). This alone will make your visit here worth it.
 
 You might also want to remove this README and write your own.
 
